@@ -53,17 +53,18 @@ export default function TodoApp() {
                     <DragDropContext onDragEnd={onDragEnd} onDragStart={onDragStart}>
                         <Droppable droppableId='todo list'>
                             {provided => (
-                                <ul className='laptop:w-[32rem] tablet:w-80 mobileL:w-[20rem] mobileS:w-[18rem] mt-14 shadow-lg' {...provided.droppableProps} ref={provided.innerRef}>
+                                <div className='laptop:w-[32rem] tablet:w-80 mobileL:w-[20rem] mobileS:w-[18rem] mt-14 shadow-lg' {...provided.droppableProps} ref={provided.innerRef}>
                                     {todos.map((item, index) => (
-                                        <Draggable key={index} draggableId={item.name} index={index}>
+                                        <Draggable key={item.id} draggableId={item.name} index={index}>
                                             {provided => (
                                                 <div
-                                                    key={index}
+                                                    key={item.id}
                                                     className={`${draggingItem === item.name && ('shadow-xl pb-14')} border bg-white grid w-full px-3 pt-3`}
                                                     {...provided.draggableProps}
                                                     {...provided.dragHandleProps}
                                                     ref={provided.innerRef}
                                                 >
+                                                     <>{index}</>
                                                     <div className='flex items-center gap-2'>
                                                         <Checked checked={item.checked} handleCheck={() => handleCheck(index, !item.checked)} />
                                                         <InputTodo
@@ -106,7 +107,7 @@ export default function TodoApp() {
                                         <p className='text-xs text-gray-500'>{todos.filter(todo => !todo.checked).length} item(s) left</p>
                                         <p className='text-xs text-gray-500'>completed items {todos.filter(todo => todo.checked).length}</p>
                                     </div>
-                                </ul>
+                                </div>
                             )}
                         </Droppable>
                     </DragDropContext>
