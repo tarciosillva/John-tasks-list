@@ -64,7 +64,6 @@ export default function TodoApp() {
                                                     {...provided.dragHandleProps}
                                                     ref={provided.innerRef}
                                                 >
-                                                     <>{index}</>
                                                     <div className='flex items-center gap-2'>
                                                         <Checked checked={item.checked} handleCheck={() => handleCheck(index, !item.checked)} />
                                                         <InputTodo
