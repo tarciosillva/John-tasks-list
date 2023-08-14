@@ -9,7 +9,7 @@ Make sure you have Node.js installed on your system before proceeding.
 1. Clone this repository:
 
 ```sh
-git clone https://github.com/your-username/nextjs-todo-list.git
+git clone https://github.com/tarciosillva/John-tasks-list.git
 
 ```
 
