@@ -55,7 +55,7 @@ export default function TodoApp() {
                             {provided => (
                                 <ul className='laptop:w-[32rem] tablet:w-80 mobileL:w-[20rem] mobileS:w-[18rem] mt-14 shadow-lg' {...provided.droppableProps} ref={provided.innerRef}>
                                     {todos.map((item, index) => (
-                                        <Draggable key={item.name} draggableId={item.name} index={index}>
+                                        <Draggable key={index} draggableId={item.name} index={index}>
                                             {provided => (
                                                 <div
                                                     key={index}
