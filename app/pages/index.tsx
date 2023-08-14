@@ -75,7 +75,7 @@ export default function TodoApp() {
                                                     </div>
                                                     <div className='mt-2 grid'>
                                                         {item.subTasks.map((subtask, indexSubTask) => (
-                                                            <div className='flex items-center pl-8 gap-2 mb-1'>
+                                                            <div key={indexSubTask} className='flex items-center pl-8 gap-2 mb-1'>
                                                                 <Checked checked={subtask.checked} handleCheck={() => handleCheckSubTask(index, indexSubTask, !subtask.checked)} />
                                                                 <InputTodo
                                                                     item={subtask}
