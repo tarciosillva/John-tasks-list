@@ -1,34 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js John Task List
 
+This is a project of a TODO list developed using Next.js.
+
+## Installation
+
+Make sure you have Node.js installed on your system before proceeding.
+
+1. Clone this repository:
+
+```sh
+git clone https://github.com/your-username/nextjs-todo-list.git
+
+```
+
+2. Navigate to the project directory:
+
+```sh
+npm install
+# or
+yarn install
+
+```
 ## Getting Started
 
-First, run the development server:
+To run the project in your local environment, follow the steps below:
 
-```bash
+1. Start the development server:
+```
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Open your browser and navigate to:
+```
+http://localhost:3000/
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+## Example runing
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![App Screenshot](https://firebasestorage.googleapis.com/v0/b/my-images-2ea49.appspot.com/o/model-john-task-list.JPG?alt=media&token=2ba2c750-2ff5-4a43-aed9-70d56e88f33f)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Running Tests
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project uses Jest for testing. To run the tests, use the following command:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+npm test
+# or
+yarn test
+```
+## Production
 
-## Deploy on Vercel
+The project is deployed on Vercel and can be accessed at the following URL:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+https://john-tasks-list.vercel.app/
+```
+## Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* Add tasks to the list
+* Mark tasks as completed
+* Reorder tasks using drag and drop
+* Add subtasks to each task
+* Mark subtasks as completed
+## Technologies Used
+
+* Next.js
+* React
+* react-beautiful-dnd (for drag and drop reordering)
+## Autors
+
+- [@tarciosillva](https://github.com/tarciosillva)
