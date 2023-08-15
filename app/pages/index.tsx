@@ -82,6 +82,8 @@ export default function TodoApp() {
                                                                     indexTask={index}
                                                                     indexSubTask={indexSubTask}
                                                                     handleEditSubTask={handleEditSubTaskName}
+                                                                    onKeyDownHandleAddSubTasks={handleAddSubTasks}
+                                                                    placeholder="press Enter to new subtask"
                                                                 />
                                                                 <TiDeleteOutline size={25} color={'gray'} style={{ cursor: "pointer" }} onClick={() => handleDeleteSubTaskItem(index, indexSubTask)} />
                                                             </div>
